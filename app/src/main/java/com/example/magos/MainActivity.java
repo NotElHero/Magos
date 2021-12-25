@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Spinner elementoDoble = findViewById(R.id.elemento2);
         elementoDoble.setOnItemSelectedListener(this);
         String elementos[] =
-                {"Luz", "Oscuridad", "Vacio", "Fuego", "Agua", "Naturaleza", "Viento", "Plasma", "Magnetismo", "Roca", "Metal", "Hielo"};
+                {"Selecciona un elemento principal", "Luz", "Oscuridad", "Vacio", "Fuego", "Agua", "Naturaleza", "Viento", "Plasma", "Magnetismo", "Roca", "Metal", "Hielo"};
         String elementosDobles[] =
-                {"Fuego", "Agua", "Naturaleza", "Viento", "Plasma", "Magnetismo", "Roca", "Metal", "Hielo"};
+                {"Selecciona un elemento secundario", "Fuego", "Agua", "Naturaleza", "Viento", "Plasma", "Magnetismo", "Roca", "Metal", "Hielo"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, elementos);
         elemento.setAdapter(adapter);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, elementosDobles);
